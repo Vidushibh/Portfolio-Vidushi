@@ -67,6 +67,12 @@
             $('.scroll-to-bottom').fadeIn('slow');
         }
     });
+    $('.scroll-to-bottom').click(function () {
+        $('html, body').animate({
+            scrollTop: $('#about').offset().top - 45
+        }, 1200, 'easeInOutExpo');
+        return false;
+    });
 
 
     function animateSkillBars(scope) {
