@@ -69,12 +69,20 @@
     });
 
 
-    // Skills
-    $('.skill').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
+    function animateSkillBars(scope) {
+        $(scope).find('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
+    }
+
+    // Skills
+    $('.skill-tab-content').waypoint(function () {
+        animateSkillBars($('.skill-tab-content .tab-pane.active'));
     }, {offset: '80%'});
+
+    $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+        animateSkillBars($($(e.target).attr('href')));
+    });
 
 
     // Portfolio isotope and filter
@@ -88,6 +96,30 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    $('.portfolio-container').imagesLoaded && $('.portfolio-container').imagesLoaded(function () {
+        portfolioIsotope.isotope('layout');
+    });
+
+
+    // Reveal sections on scroll
+    var revealTargets = $('#about, #qualification, #portfolio, #skill, #certificate, #testimonial, #blog');
+    revealTargets.addClass('reveal-section');
+    if ('IntersectionObserver' in window) {
+        var revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    $(entry.target).addClass('is-visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {threshold: 0.12});
+        revealTargets.each(function () {
+            revealObserver.observe(this);
+        });
+    } else {
+        revealTargets.addClass('is-visible');
+    }
     
     
     // Back to top button

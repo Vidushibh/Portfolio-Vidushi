@@ -63,27 +63,46 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+    <div class="container-fluid hero-section d-flex align-items-center mb-5 py-5" id="home">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/vibhar@iu.edu-1.jpg" alt="" style="height: 400px; width: 90px; object-fit: cover;">
-                </div>
+            <div class="row align-items-center hero-grid">
                 <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Vidushi Bhargava</h1>
-                    <h3 class="text-white font-weight-normal mb-3">I build <span class="typed-text-output d-inline font-weight-bold text-white"></span></h3>
+                    <p class="hero-kicker">Data Scientist & AI Developer</p>
+                    <h1 class="hero-title">Vidushi Bhargava</h1>
+                    <h2 class="hero-subtitle">I build <span class="typed-text-output d-inline font-weight-bold"></span></h2>
                     <div class="typed-text d-none">AI automation, financial analytics, cloud data products, ML forecasting, executive-ready dashboards</div>
                     <div class="hero-metrics d-flex flex-wrap justify-content-center justify-content-lg-start mt-4">
                         <span>14M+ records processed</span>
                         <span>60% faster reporting</span>
                         <span>95%+ test coverage</span>
                     </div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="https://drive.google.com/file/d/1_tYLAyXJDC84jE8Mm-sF1J3iHZ_ACGq7/view?usp=sharing" class="btn btn-outline-light mr-5" target="_blank">Download CV</a>
-
-                        
-                        
+                    <p class="hero-copy">I turn legacy reporting, financial workflows, and machine learning ideas into reliable AI-enabled products using Python, AWS Bedrock, FastAPI, MCP, DynamoDB, BI, and cloud data engineering.</p>
+                    <div class="hero-actions d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="#portfolio" class="btn hero-btn-primary mr-sm-3 mb-3">View Projects</a>
+                        <a href="https://drive.google.com/file/d/1_tYLAyXJDC84jE8Mm-sF1J3iHZ_ACGq7/view?usp=sharing" class="btn hero-btn-secondary mb-3" target="_blank">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="hero-visual">
+                        <img class="hero-photo" src="img/vibhar@iu.edu-1.jpg" alt="Vidushi Bhargava">
+                        <div class="hero-current">
+                            <span>Current role</span>
+                            <strong>Developer at Barclays</strong>
+                        </div>
+                    </div>
+                    <div class="hero-focus">
+                        <div>
+                            <i class="fas fa-robot"></i>
+                            <span>AI Automation</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chart-line"></i>
+                            <span>Financial Analytics</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-cloud"></i>
+                            <span>Cloud Data Products</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,9 +179,22 @@
                 <div class="col-lg-6">
                     <h3 class="mb-4">Experience</h3>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
+                        <div class="position-relative mb-4 experience-card">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Developer</h5>
+                            <button class="experience-toggle" type="button" data-toggle="collapse" data-target="#expBarclays" aria-expanded="true" aria-controls="expBarclays">
+                                <span>
+                                    <strong>Developer</strong>
+                                    <small>Barclays | Feb 2025 - Present</small>
+                                </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="impact-row">
+                                <span>60% faster reports</span>
+                                <span>14M+ records</span>
+                                <span>40% more deployments</span>
+                            </div>
+                            <div id="expBarclays" class="collapse show experience-details">
+                            <h5 class="font-weight-bold mb-1 sr-only">Developer</h5>
                             <p class="mb-2"><strong>Barclays</strong> | <small>Feb 2025 - Present</small></p>
                             <li>Led end-to-end EUDA legacy Excel modernization by engaging business stakeholders, planning phased delivery, resolving AWS Bedrock constraints, and delivering on schedule.</li>
                             <li>Converted VBA Magnite workflows to Python while preserving business logic integrity and improving long-term maintainability.</li>
@@ -171,10 +203,23 @@
                             <li>Implemented parallel processing with Polars, cutting report generation time by 60% and achieving sub-5-second response times for 14M+ records.</li>
                             <li>Maintained GitLab CI/CD pipelines for SIT, UAT, and production deployments, increasing deployment frequency by 40% while sustaining zero-defect releases.</li>
                             <p style="color: #247459; font-size: 15px;"><b>Relevant Tools and Skills:</b> Python, AWS Bedrock, Claude, DynamoDB, FastAPI, MCP, Polars, Copilot Studio, GitLab CI/CD, SonarQube, Excel Automation, Jira</p>
+                            </div>
                         </div>
-                        <div class="position-relative mb-4">
+                        <div class="position-relative mb-4 experience-card">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Financial Data Analyst</h5>
+                            <button class="experience-toggle collapsed" type="button" data-toggle="collapse" data-target="#expIU" aria-expanded="false" aria-controls="expIU">
+                                <span>
+                                    <strong>Financial Data Analyst</strong>
+                                    <small>School of Dentistry, Indiana University | Aug 2024 - Feb 2025</small>
+                                </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="impact-row">
+                                <span>18% forecast accuracy lift</span>
+                                <span>20% efficiency gain</span>
+                            </div>
+                            <div id="expIU" class="collapse experience-details">
+                            <h5 class="font-weight-bold mb-1 sr-only">Financial Data Analyst</h5>
                             <p class="mb-2"><strong>School of Dentistry, Indiana University</strong> | <small>Aug 2024 - Feb 2025</small></p>
                             <li>Implemented an LSTM forecasting model on Azure Machine Learning, leveraging Azure Data Factory for data integration and
                                 pre-processing of historical data and patient visits, which increased forecast accuracy by 15% and enhanced budget planning.</li>
@@ -183,12 +228,25 @@
                             <li>Expanded operational efficiency by 20% by developing automated Power BI dashboards with row-level security and utilizing
                                 statistical analysis to visualize financial metrics and KPIs, improving decision-making across multiple departments.</li>
                             <p style="color: #247459; font-size: 15px;"><b>Relevant Tools and Skills:</b> ETL, Power BI, Microsoft Suite, Python, Oracle, SQL, Axium, Data Analysis</p>
+                            </div>
                         </div>
                     </div>
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
+                        <div class="position-relative mb-4 experience-card">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Data Management Analyst</h5>
+                            <button class="experience-toggle collapsed" type="button" data-toggle="collapse" data-target="#expFhlbi" aria-expanded="false" aria-controls="expFhlbi">
+                                <span>
+                                    <strong>Data Management Analyst</strong>
+                                    <small>Federal Home Loan Bank of Indianapolis | Jun 2023 - Dec 2023</small>
+                                </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="impact-row">
+                                <span>30% faster ETL</span>
+                                <span>35 hours saved weekly</span>
+                            </div>
+                            <div id="expFhlbi" class="collapse experience-details">
+                            <h5 class="font-weight-bold mb-1 sr-only">Data Management Analyst</h5>
                             <p class="mb-2"><strong>Federal Home Loan Bank of Indianapolis</strong> | <small>Jun 2023- Dec 2023</small></p>
                             <li>Reduced data retrieval time by 26% by optimizing reports and decreased ETL processing time by 30% using SSIS and batch
                                 processes. Enhanced data migration from Oracle to SQL Server with Change Data Capture and Azure Data Factory.</li>
@@ -197,19 +255,41 @@
                             <li>Increased data accessibility by 10% by developing automated Power BI dashboards integrated with Power Automate on top of SQL
                                 views, facilitating real-time decision making across the organization.</li>
                             <p style="color: #247459; font-size: 15px;"><b>Relevant Tools and Skills:</b> ETL, Brightics, Oracle, SQL Server, Power BI, SSIS, SSRS RICH Client, Rally, Microsoft Suite</p>
+                            </div>
                         </div>
-                        <div class="position-relative mb-4">
+                        <div class="position-relative mb-4 experience-card">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Business Analyst</h5>
+                            <button class="experience-toggle collapsed" type="button" data-toggle="collapse" data-target="#expGenpact" aria-expanded="false" aria-controls="expGenpact">
+                                <span>
+                                    <strong>Business Analyst</strong>
+                                    <small>Genpact | Jan 2022 - Aug 2022</small>
+                                </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div id="expGenpact" class="collapse experience-details">
+                            <h5 class="font-weight-bold mb-1 sr-only">Business Analyst</h5>
                             <p class="mb-2"><strong>Genpact</strong> | <small>Jan 2022 - Aug 2022</small></p>
                             <li>Conducted in-depth performance analysis of models, improving accuracy by 13\% through adjustments in parameters, ensuring adherence to regulatory requirements with zero compliance breaches.</li>
                                     <li>Designed and executed ongoing monitoring frameworks for 5 key models, improving model accuracy by 20\% and ensuring governance and controls are upheld.</li>
                                     <li>Developed and implemented validation plans for 10+ models, ensuring model integrity and compliance with regulatory standards, reducing model validation time by 15\%.</li>
                                     <p style="color: #247459; font-size: 15px;"><b>Relevant Tools and Skills:</b> Python, AWS S3, SQL, MLOps, CI/CD pipelines, Machine Learning, Statistical Analysis</p>
+                            </div>
                         </div>
-                        <div class="position-relative mb-4">
+                        <div class="position-relative mb-4 experience-card">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Senior Data Science Analyst</h5>
+                            <button class="experience-toggle collapsed" type="button" data-toggle="collapse" data-target="#expCartesian" aria-expanded="false" aria-controls="expCartesian">
+                                <span>
+                                    <strong>Senior Data Science Analyst</strong>
+                                    <small>Cartesian Consulting | July 2021 - Jan 2022</small>
+                                </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="impact-row">
+                                <span>475M records</span>
+                                <span>25% marketing lift</span>
+                            </div>
+                            <div id="expCartesian" class="collapse experience-details">
+                            <h5 class="font-weight-bold mb-1 sr-only">Senior Data Science Analyst</h5>
                             <p class="mb-2"><strong>Cartesian Consulting</strong> | <small>July 2021 - Jan 2022</small></p>
                             <li>Performed exploratory data analysis and feature engineering on a dataset of 475 million records to analyze the surrogate product,
                                 leveraging Python, SQL, NLTK, and integrated CI/CD pipelines with AWS S3, which improved model performance by 18%.</li>
@@ -219,10 +299,23 @@
                                         <li>Boosted customer engagement and conversion rates by 25% by developing a personalized recommendation model based on previous
                                             purchase history, ensuring communications correctly addressed the phone/email holder by name.</li>
                                 <p style="color: #247459; font-size: 15px;"><b>Relevant Tools and Skills:</b> Python, Docker,AWS S3, EC2, Machine Learning, Statistical Analysis, CI/CD pipelines</p>
+                            </div>
                         </div>
-                        <div class="position-relative mb-4">
+                        <div class="position-relative mb-4 experience-card">
                             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Senior Subject Matter Expert</h5>
+                            <button class="experience-toggle collapsed" type="button" data-toggle="collapse" data-target="#expChegg" aria-expanded="false" aria-controls="expChegg">
+                                <span>
+                                    <strong>Senior Subject Matter Expert</strong>
+                                    <small>Chegg India Pvt Ltd | Jan 2019 - Jul 2021</small>
+                                </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="impact-row">
+                                <span>36% spam reduction</span>
+                                <span>25% routing gain</span>
+                            </div>
+                            <div id="expChegg" class="collapse experience-details">
+                            <h5 class="font-weight-bold mb-1 sr-only">Senior Subject Matter Expert</h5>
                             <p class="mb-2"><strong>Chegg India Pvt Ltd</strong> | <small>Jan 2019 - Jul 2021</small></p>
                             <li>Contributed to a 36% reduction in spam content and enhanced platform credibility by creating Random Forest model (85%
                                 accuracy) with MLOps practices to identify and filter out spam solutions posted by freelancers.</li>
@@ -231,6 +324,7 @@
                                 <li>Refined model accuracy by reducing mislabeled errors by 30% and addressing 28% of other errors through error analysis (Eyeball
                                     and Blackbox subsets), cross-validation and hyperparameter tuning , and Agile iterative improvements.</li>
                                 <p style="color: #247459; font-size: 15px;"><b>Relevant Tools and Skills:</b> Python, MLOps, Agile Methodology, Machine Learning, Statistical Analysis</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,55 +352,61 @@
             </div>
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
+                    <div class="position-relative overflow-hidden mb-2 portfolio-card">
                         <img class="img-fluid rounded w-100" src="img/cervical.jpeg" alt="">
                         <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Cervical Cancer Prediction Using XgBoost</h3>
-                        <p>Tech Stack: Machine Learning, EDA, Data Visualization</p>
+                        <p class="project-impact">Risk prediction workflow with interpretable feature analysis.</p>
+                        <p class="project-stack"><span>Machine Learning</span><span>EDA</span><span>XGBoost</span></p>
                         <ul class="actions"></ul>
                         <a href="https://github.com/Vidushibh/Cervical-Cancer-Prediction-Using-XG-boost-algorithm/tree/master" target="_blank" class="button">View Project</a>    
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
+                    <div class="position-relative overflow-hidden mb-2 portfolio-card">
                         <img class="img-fluid rounded w-100" src="img/diabetic-rethonopaty.jpeg" alt="">
                         <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Diabetic Retinopathy Detection</h3>
-                        <p>Tech Stack: Deep Learning,Tensorflow, Keras, Matplotlib, Seaborn</p>
+                        <p class="project-impact">Computer vision model for medical image classification.</p>
+                        <p class="project-stack"><span>Deep Learning</span><span>TensorFlow</span><span>Keras</span></p>
                         <ul class="actions"></ul>
                         <a href="https://github.com/Vidushibh/Diabetic-Retinopathy-Detection" target="_blank" class="button">View Project</a>
                     </div>   
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
+                    <div class="position-relative overflow-hidden mb-2 portfolio-card">
                         <img class="img-fluid rounded w-100" src="img/Autoreview.jpeg" alt="">
                         <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">AutoReview - AI Assistance using LLM</h3>
-                        <p>Tech Stack: Transformers, pipeline, pre-trained model, Torch, Matplotlib, Seaborn</p>
+                        <p class="project-impact">LLM-assisted review summarization and insight extraction.</p>
+                        <p class="project-stack"><span>Transformers</span><span>PyTorch</span><span>LLM</span></p>
                         <ul class="actions"></ul>
                         <a href="https://github.com/Vidushibh/AutoReview-AI-Assistance-using-LLM" target="_blank" class="button">View Project</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
+                    <div class="position-relative overflow-hidden mb-2 portfolio-card">
                         <img class="img-fluid rounded w-100" src="img/Customer Market Segmentation.jpeg" alt="">
                         <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Bank Customer Market Segmentation</h3>
-                        <p>Tech Stack: Panda, Scikit-learn,Matplotlib, Seaborn, PCA, KMeans</p>
+                        <p class="project-impact">Customer clusters for targeted banking campaigns.</p>
+                        <p class="project-stack"><span>Scikit-learn</span><span>PCA</span><span>KMeans</span></p>
                         <ul class="actions"></ul>
                         <a href="https://github.com/Vidushibh/Bank-Customer-Marketing-Segmentation" target="_blank" class="button">View Project</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
+                    <div class="position-relative overflow-hidden mb-2 portfolio-card">
                         <img class="img-fluid rounded w-100" src="img/sentiment.jpeg" alt="">
                         <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Sentiment Analysis with Deep Learning using BERT</h3>
-                        <p>Tech Stack: transformer, BertForSequenceClassification</p>
+                        <p class="project-impact">Transformer-based sentiment classifier for social text.</p>
+                        <p class="project-stack"><span>BERT</span><span>Transformers</span><span>NLP</span></p>
                         <ul class="actions"></ul>
                         <a href="https://github.com/Vidushibh/SmileSent---Analyzing-sentiments-with-Twitter-s-SMILE-dataset" target="_blank" class="button">View Project</a>
                         </div> 
                     </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
+                    <div class="position-relative overflow-hidden mb-2 portfolio-card">
                         <img class="img-fluid rounded w-100" src="img/pet.jpeg" alt="">
                         <h3 style="font-size: 1em; COLOR: rgba(105, 40, 91, 0.861);">Pet Disease Identifier using GeminiPro Vision</h3>
-                        <p>Tech Stack: Python, Generative ai, GeminiPro, Streamlit</p>
+                        <p class="project-impact">Multimodal GenAI app for pet disease screening support.</p>
+                        <p class="project-stack"><span>Python</span><span>GeminiPro</span><span>Streamlit</span></p>
                         <ul class="actions"></ul>
                         <a href="https://github.com/Vidushibh/Pet-Disease-Identifier-GeminiPro-Vision" target="_blank" class="button">View Project</a>
                     </div>
@@ -324,81 +424,106 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
                 <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
             </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Python</h6>
-                            <h6 class="font-weight-bold">95%</h6>
+            <ul class="nav nav-pills skill-tabs justify-content-center mb-4" id="skillTabs" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#skills-ai" role="tab">AI/ML</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#skills-cloud" role="tab">Cloud</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#skills-data" role="tab">Data</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#skills-delivery" role="tab">Delivery</a></li>
+            </ul>
+            <div class="tab-content skill-tab-content">
+                <div class="tab-pane fade show active" id="skills-ai" role="tabpanel">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Machine Learning & Gen AI</h6><h6 class="font-weight-bold">90%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">AWS Bedrock & Claude</h6><h6 class="font-weight-bold">90%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">AWS Bedrock & DynamoDB</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">SQL</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">FastAPI & MCP Microservices</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Deep Learning & NLP</h6><h6 class="font-weight-bold">88%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Copilot Studio Agents</h6><h6 class="font-weight-bold">85%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Power BI & Tableau</h6>
-                            <h6 class="font-weight-bold">90%</h6>
+                <div class="tab-pane fade" id="skills-cloud" role="tabpanel">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">AWS: Bedrock, DynamoDB, EC2, S3</h6><h6 class="font-weight-bold">90%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Azure Machine Learning</h6><h6 class="font-weight-bold">85%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Machine Learning & Gen AI</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Azure, Docker & Snowflake</h6>
-                            <h6 class="font-weight-bold">88%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-darker-info" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Docker & Snowflake</h6><h6 class="font-weight-bold">88%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-darker-info" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Cloud Data Pipelines</h6><h6 class="font-weight-bold">88%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">GitLab CI/CD & SonarQube</h6>
-                            <h6 class="font-weight-bold">85%</h6>
+                </div>
+                <div class="tab-pane fade" id="skills-data" role="tabpanel">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Python & Polars</h6><h6 class="font-weight-bold">95%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">SQL, Oracle & SQL Server</h6><h6 class="font-weight-bold">95%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Power BI & Tableau</h6><h6 class="font-weight-bold">90%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Data Governance & Reporting</h6><h6 class="font-weight-bold">90%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="skills-delivery" role="tabpanel">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">FastAPI & MCP Microservices</h6><h6 class="font-weight-bold">90%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">GitLab CI/CD</h6><h6 class="font-weight-bold">85%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">SonarQube Quality Gates</h6><h6 class="font-weight-bold">95%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between"><h6 class="font-weight-bold">Agile Stakeholder Delivery</h6><h6 class="font-weight-bold">90%</h6></div>
+                                <div class="progress"><div class="progress-bar bg-dark" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
                         </div>
                     </div>
                 </div>
