@@ -126,6 +126,27 @@
     } else {
         revealTargets.addClass('is-visible');
     }
+
+    var journeyItems = $('.journey-item');
+    if ('IntersectionObserver' in window) {
+        $('.journey-map').addClass('animate-ready');
+        var journeyObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    var index = journeyItems.index(entry.target);
+                    setTimeout(function () {
+                        $(entry.target).addClass('is-visible');
+                    }, index * 90);
+                    journeyObserver.unobserve(entry.target);
+                }
+            });
+        }, {threshold: 0.18});
+        journeyItems.each(function () {
+            journeyObserver.observe(this);
+        });
+    } else {
+        journeyItems.addClass('is-visible');
+    }
     
     
     // Back to top button
